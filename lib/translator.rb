@@ -15,8 +15,8 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   hash_translations = load_library(file_path)
-    hash_translations.keys.find do |key| 
-       binding.pry
+  hash_translations.keys.find do |key| 
+     binding.pry
   end 
 end
 
