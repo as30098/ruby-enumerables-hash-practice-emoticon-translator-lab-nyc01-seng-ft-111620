@@ -25,10 +25,7 @@ end
 
 def get_english_meaning(file_path, emoticon)
   hash_translations = load_library(file_path)
-  hash_translations.find do |object| 
-    if emoticon == object[key]['japanese']
-      binding.pry
-      return key
-    end 
+  hash_translations.keys.find do |object| 
+  
   end 
 end
