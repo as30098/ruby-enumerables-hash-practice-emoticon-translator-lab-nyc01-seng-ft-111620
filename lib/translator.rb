@@ -14,9 +14,11 @@ def load_library(file_path)
 end
 
 def get_japanese_emoticon(file_path, emoticon)
-  binding.pry 
+  binding.pry
   hash_translations = load_library(file_path)
   hash_translations.each do |key, value| 
+    hash_translations.keys 
+    binding.pry
     if key['english'] == emoticon
         return key['japanese']
     end
