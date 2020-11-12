@@ -25,7 +25,7 @@ end
 
 def get_english_meaning(file_path, emoticon)
   hash_translations = load_library(file_path)
-  hash_translations.keys.find do |object| 
+  hash_translations.keys.find do |key| 
   
   end 
 end
