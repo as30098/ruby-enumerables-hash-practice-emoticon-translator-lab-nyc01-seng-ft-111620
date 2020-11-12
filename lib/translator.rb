@@ -19,7 +19,6 @@ def get_japanese_emoticon(file_path, emoticon)
     hash_translations.keys.find |key| 
       hash_translations[key] == emoticon
        binding.pry
-    end 
   end 
 end
 
