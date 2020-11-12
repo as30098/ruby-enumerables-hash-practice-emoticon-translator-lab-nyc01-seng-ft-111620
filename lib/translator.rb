@@ -16,7 +16,9 @@ end
 def get_japanese_emoticon(file_path, emoticon)
   hash_translations = load_library(file_path)
   hash_translations.keys.find do |key| 
-    hash_translations[key][:english] == emoticon
+    if hash_translations[key][:english] == emoticon
+      return hash_translations[key][:japanese]
+     end 
   end 
 end
 
