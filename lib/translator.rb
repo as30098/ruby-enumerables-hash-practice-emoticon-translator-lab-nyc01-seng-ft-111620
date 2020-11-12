@@ -2,7 +2,7 @@ require 'yaml'
 require 'pry'
 def load_library(file_path)
   emoticons_hash = YAML.load_file(file_path)
-  puts emoticons_hash.inspect
+  #puts emoticons_hash.inspect
   hash = {}
   array = []
     emoticons_hash.each() do |key, value|
