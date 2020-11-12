@@ -18,6 +18,8 @@ def get_japanese_emoticon(file_path, emoticon)
   hash_translations.keys.find do |key| 
     if hash_translations[key][:english] == emoticon
       return hash_translations[key][:japanese]
+    elsif
+      return "Sorry, that emoticon was not found"
      end 
   end 
 end
